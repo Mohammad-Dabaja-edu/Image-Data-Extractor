@@ -1,0 +1,57 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<div class="mb-3" align="center">
+    <h1 class="text-primary"> Parsing Result </h1>
+</div>
+
+<br>
+
+<div class="mb-3">
+    <div class="card">
+      <img src="../static/{{img.split('.')[0]}}/{{img}}" class="card-img-top" alt="check">
+      <div class="card-body">
+        <table class="table table-hover table-bordered border-primary">
+        <thead class="table-primary">
+            <td>attribute</td>
+            <td>data</td>
+        </thead>
+        <tbody>
+            {% for key in parses%}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{parses[key]}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+
+    </table>
+      </div>
+    </div>
+<div>
+
+
+
+<!--<img src="../static/{{img.split('.')[0]}}/{{img}}" alt="check" class="img-fluid mx-auto d-block" />-->
+
+<!--<table class="table table-hover table-bordered border-primary">-->
+<!--    <thead class="table-primary">-->
+<!--        <td>attribute</td>-->
+<!--        <td>data</td>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--        {% for key in parses%}-->
+<!--        <tr>-->
+<!--            <td>{{key}}</td>-->
+<!--            <td>{{parses[key]}}</td>-->
+<!--        </tr>-->
+<!--        {%endfor%}-->
+<!--    </tbody>-->
+
+<!--</table>-->
+
+
+
+
+{%endblock content%}

@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<div class="mb-3" align="center">
+    <h1> Parse </h1>
+</div>
+
+<form method="POST" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="image" class="form-label">image file:</label>
+        <input type="file" name="image" id="image" accept="image/*" class="form-control">
+    </div>
+    <input type="submit" value="parse" class="btn btn-primary">
+</form>
+
+
+{%endblock content%}
