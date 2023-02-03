@@ -1,0 +1,24 @@
+item {
+    id: 1
+    name: 'name'
+}
+
+item {
+    id: 2
+    name: 'place'
+}
+
+item {
+    id: 3
+    name: 'arabicId'
+}
+
+item {
+    id: 4
+    name: 'engId'
+}
+
+item {
+    id: 5
+    name: 'date'
+}
